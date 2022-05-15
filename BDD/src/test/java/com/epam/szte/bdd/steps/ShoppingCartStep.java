@@ -54,25 +54,6 @@ public class ShoppingCartStep {
         shoppingCartPage.assertTotalValue2();
     }
 
-    @And("I click on green color")
-    public void clickOnGreenButton() {
-        shoppingCartPage.clickGreenButton();
-    }
-
-    @Then("the color display value should be green")
-    public void selectedGreenColor(String green) {
-        shoppingCartPage.assertGreenButton(green);
-    }
-
-    @And("I click on black color")
-    public void clickOnBlackButton() {
-        shoppingCartPage.clickBlackButton();
-    }
-
-    @Then("the color display value should be black")
-    public void selectedBlackColor(String black) {
-        shoppingCartPage.assertBlackButton(black);
-    }
 
     @Then("^I will see the shopping cart page$")
     public void shoppingCartPageIsDisplayed() {
