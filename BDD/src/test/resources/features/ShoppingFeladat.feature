@@ -15,7 +15,7 @@ Feature: Shopping cart items
     Then I will see the shopping cart page
     And I see the added items
       | Description           | Unit price | Qty | Total  |
-      | Printed Chiffon Dress | $16.40     | 4   | $67.60 |
+      | Printed Chiffon Dress | $16.40     | 4   | $65.60 |
 
   Scenario: Check Printed Chiffon Dress the shopping cart
     Given I have opened the My Store page

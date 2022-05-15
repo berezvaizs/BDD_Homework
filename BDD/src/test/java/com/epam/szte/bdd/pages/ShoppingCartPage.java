@@ -57,11 +57,11 @@ public class ShoppingCartPage extends PageObject {
     private WebElement totalPriceText;
 
     public void assertTotalValue() {
-        assertTrue("Wrong Price", totalPriceText.getText().contains("67.60"));
+        assertTrue("Wrong Price", totalPriceText.getText().contains("65.60"));
     }
 
     public void assertTotalValue2() {
-        assertTrue("Wrong Price", totalPriceText.getText().contains("29.00"));
+        assertTrue("Wrong Price", totalPriceText.getText().contains("27.00"));
     }
 
     @FindBy(id = "color_15")
