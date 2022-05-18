@@ -20,7 +20,7 @@ Feature: Shopping cart items
   Scenario: Check Printed Chiffon Dress the shopping cart
     Given I have opened the My Store page
     When I click on "Women" tab
-    And I select the "Printed Dress" product
+    And I select the "Printed Chiffon Dress" product
     And I set Quantity number to "4"
     Then the Quantity field's display value should be "4"
     When I put Size to "L"

@@ -39,6 +39,11 @@ public class HomepageStep {
 	/**
 	 * �rai Feladat
 	 */
+
+	@When("^I select on Contact us button$")
+	public void clickOncontactUsButton() {
+		homepagePage.clickOnContactButton();
+	}
 	
 
 	

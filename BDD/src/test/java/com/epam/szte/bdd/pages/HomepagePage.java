@@ -49,10 +49,16 @@ public class HomepagePage extends PageObject {
 	}
 	
 	/**
-	 * Órai Feladat
+	 * ï¿½rai Feladat
 	 */
-	
 
 
-	
+
+	@FindBy(css="#contact-link")
+	private WebElement contactButton;
+
+	public void clickOnContactButton() {
+		contactButton.click();
+	}
+
 }

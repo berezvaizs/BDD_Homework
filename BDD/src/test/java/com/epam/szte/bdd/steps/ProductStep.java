@@ -46,5 +46,14 @@ public class ProductStep {
 	 * �rai Feladat
 	 */
 
+	@When("^I set Size to \"([^\"]*)\"$")
+	public void setSize(String size) {
+		productPage.selectSize(size);
+	}
+
+	@Then("^I see the selecte Size is \"([^\"]*)\"")
+	public void checkTheSelectedSize(String size) {
+		Assert.assertEquals(size, productPage.getSelectedSize(size));
+	}
 
 }

@@ -3,6 +3,7 @@ package com.epam.szte.bdd.steps;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.beans.SamePropertyValuesAs.samePropertyValuesAs;
+import static org.hamcrest.core.StringContains.containsString;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -79,6 +80,14 @@ public class ShoppingCartStep {
         for (Product expectedProduct : expectedProducts) {
             assertThat("failed", actualIterator.next(), samePropertyValuesAs(expectedProduct));
         }
+    }
+
+    private static String CART_IS_EMPTY = "cart is empty";
+
+
+    @Then("^I can see the cart is empty$")
+    public void checkEmptyCartAlert() {
+        assertThat(shoppingCartPage.getAlertMessage(), containsString(CART_IS_EMPTY));
     }
 
 }

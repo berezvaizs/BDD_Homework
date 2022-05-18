@@ -5,7 +5,7 @@ Feature: Create Account
   Scenario: Login test
     Given I have opened the My Store page
     When I select the Sign in button
-    Then I have opened the My Store page
-    When I type in email
-    ##And I click on the Create button
-    ##Then Registration page is loaded
+    Then I will see the Login page
+    When I type in Email address field
+    ##And I select the Create Account button
+    ##Then I will see the Registration page

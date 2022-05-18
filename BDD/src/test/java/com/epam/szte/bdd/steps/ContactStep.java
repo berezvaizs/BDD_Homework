@@ -13,7 +13,7 @@ public class ContactStep {
 	
 	private ContactPage contactPage = new ContactPage(Hooks.driver);
 	
-	@Then("^I can see the contuct us page$")
+	@Then("^I can see the contact us page$")
 	public void theConatactPageIsVisible() {
 		assertTrue("The Contact page is not displayed", contactPage.contactPageIsVisible());
 	}

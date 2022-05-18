@@ -3,7 +3,7 @@ Feature: Search
 
   
   Scenario: Searching for items
-  	Given I open the My Store page
+  	Given I have opened the My Store page
 		When I type the "Dress" on search field
 		And I click on Search button
 		Then I see the page redirected to the search result page

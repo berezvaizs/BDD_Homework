@@ -61,9 +61,20 @@ public class ProductPage extends PageObject {
 	}	
 	
 	/**
-	 * Órai Feladat
+	 * ï¿½rai Feladat
 	 */
-	
+	@FindBy(css=".attribute_select")
+	private WebElement productSize;
+
+	public void selectSize(String size) {
+		Select select = new Select(productSize);
+		select.selectByVisibleText(size);
+	}
+
+	public String getSelectedSize(String size) {
+		Select select = new Select(productSize);
+		return select.getFirstSelectedOption().getText();
+	}
 
 
 }
