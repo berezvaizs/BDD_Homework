@@ -5,7 +5,7 @@ Feature: Login
   Scenario Outline: Login test
     Given I have opened the My Store page
     When I select the Sign in button
-    Then I have opened the My Store page
+    Then I will see the Login page
     When I login with <user> emailaddress and <password> password
     And I click on Login Button
     Then The account title should be <accountTitle>
