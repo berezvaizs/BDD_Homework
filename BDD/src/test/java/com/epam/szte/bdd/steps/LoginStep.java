@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 
 public class LoginStep {
 	
-	private LoginPage loginPage = new LoginPage(Hooks.driver);
+	private final LoginPage loginPage = new LoginPage(Hooks.driver);
 	
 	@When("^I write \"([^\"]*)\" into email field$")
 	public void writeEmailAdressIntoEmailField(String emailAddress) {

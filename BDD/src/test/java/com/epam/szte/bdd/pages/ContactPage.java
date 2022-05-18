@@ -9,11 +9,12 @@ import com.epam.szte.bdd.utils.PageObject;
 
 public class ContactPage extends PageObject{
 
-	private WebDriver drive;
-	
+	private final WebDriver driver;
+
 	public ContactPage(WebDriver driver) {
 		super(driver);
-		this.drive = driver;
+		this.driver = driver;
+
 	}
 	
 	@FindBy(css="#contact")

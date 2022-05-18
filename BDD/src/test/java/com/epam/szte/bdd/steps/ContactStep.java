@@ -11,7 +11,7 @@ import io.cucumber.java.en.When;
 
 public class ContactStep {
 	
-	private ContactPage contactPage = new ContactPage(Hooks.driver);
+	private final ContactPage contactPage = new ContactPage(Hooks.driver);
 	
 	@Then("^I can see the contact us page$")
 	public void theConatactPageIsVisible() {

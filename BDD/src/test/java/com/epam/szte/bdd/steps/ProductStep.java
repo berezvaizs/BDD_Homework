@@ -10,7 +10,7 @@ import io.cucumber.java.en.When;
 
 public class ProductStep {
 
-	private ProductPage productPage = new ProductPage(Hooks.driver);
+	private final ProductPage productPage = new ProductPage(Hooks.driver);
 	
 	@Then("^I see the \"([^\"]*)\" product page$")
 	public void seeTheSelectedProduct(String productName) {
@@ -24,7 +24,7 @@ public class ProductStep {
 
 	@Then("^the Quantity field's display value should be \"([^\"]*)\"$")
 	public void checkQuantityNumber(String quntity) {
-		Assert.assertEquals(quntity, productPage.getQuantityNumbet());
+		Assert.assertEquals(quntity, productPage.getQuantityNumber());
 	}
 
 	@When("^I click on Add to cart button$")
@@ -53,7 +53,7 @@ public class ProductStep {
 
 	@Then("^I see the selecte Size is \"([^\"]*)\"")
 	public void checkTheSelectedSize(String size) {
-		Assert.assertEquals(size, productPage.getSelectedSize(size));
+		Assert.assertEquals(size, productPage.getSelectedSize());
 	}
 
 }

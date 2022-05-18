@@ -82,7 +82,7 @@ public class ShoppingCartStep {
         }
     }
 
-    private static String CART_IS_EMPTY = "cart is empty";
+    private static final String CART_IS_EMPTY = "cart is empty";
 
 
     @Then("^I can see the cart is empty$")

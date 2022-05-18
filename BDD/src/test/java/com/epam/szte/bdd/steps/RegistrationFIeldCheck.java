@@ -1,6 +1,5 @@
 package com.epam.szte.bdd.steps;
 
-import com.epam.szte.bdd.hooks.Hooks;
 import com.epam.szte.bdd.pages.RegistrationPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

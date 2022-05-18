@@ -11,7 +11,7 @@ import com.epam.szte.bdd.utils.PageObject;
 
 public class ProductPage extends PageObject {
 
-	private WebDriver driver;
+	private final WebDriver driver;
 	
 	public ProductPage(WebDriver driver) {
 		super(driver);
@@ -42,7 +42,7 @@ public class ProductPage extends PageObject {
 		productQuantityField.sendKeys(quantity);
 	}
 	
-	public String getQuantityNumbet() {
+	public String getQuantityNumber() {
 		return productQuantityField.getAttribute("value");
 	}
 	
@@ -71,7 +71,7 @@ public class ProductPage extends PageObject {
 		select.selectByVisibleText(size);
 	}
 
-	public String getSelectedSize(String size) {
+	public String getSelectedSize() {
 		Select select = new Select(productSize);
 		return select.getFirstSelectedOption().getText();
 	}

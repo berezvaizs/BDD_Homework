@@ -12,7 +12,7 @@ import io.cucumber.java.en.Then;
 
 public class SearchResultStep {
 	
-	private SearchResultsPage searchResultsPage = new SearchResultsPage(Hooks.driver);
+	private final SearchResultsPage searchResultsPage = new SearchResultsPage(Hooks.driver);
 	
 	private static final String SEARCH = "SEARCH";
 	

@@ -14,7 +14,7 @@ import io.cucumber.java.en.When;
 
 public class CommonStep {
 
-	private CommonPage commonPage = new CommonPage(Hooks.driver);
+	private final CommonPage commonPage = new CommonPage(Hooks.driver);
 	
 	@When("^I select the \"([^\"]*)\" product$")
 	public void selectProduct(String productName) {

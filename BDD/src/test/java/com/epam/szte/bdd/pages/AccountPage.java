@@ -11,9 +11,9 @@ import com.epam.szte.bdd.utils.PageObject;
  * Page object for Account page.
  */
 public class AccountPage extends PageObject {
-	
-	private WebDriver driver;
-	
+
+	private final WebDriver driver;
+
     public AccountPage(WebDriver driver) {
     	super(driver);
 		this.driver = driver;

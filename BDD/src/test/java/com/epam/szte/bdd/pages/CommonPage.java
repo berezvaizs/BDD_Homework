@@ -13,7 +13,7 @@ import com.epam.szte.bdd.utils.PageObject;
 
 public class CommonPage extends PageObject {
 
-	private WebDriver driver;
+	private final WebDriver driver;
 	
 	public CommonPage(WebDriver driver) {
 		super(driver);

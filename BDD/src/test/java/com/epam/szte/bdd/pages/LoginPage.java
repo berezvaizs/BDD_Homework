@@ -7,7 +7,7 @@ import com.epam.szte.bdd.utils.PageObject;
 
 public class LoginPage extends PageObject {
 
-	private WebDriver driver;
+	private final WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
 		super(driver);

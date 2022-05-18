@@ -57,35 +57,12 @@ public class ShoppingCartPage extends PageObject {
     private WebElement totalPriceText;
 
     public void assertTotalValue() {
-        assertTrue("Wrong Price", totalPriceText.getText().contains("65.60"));
+        assertTrue("Wrong Price", totalPriceText.getText().contains("$65.60"));
     }
 
     public void assertTotalValue2() {
-        assertTrue("Wrong Price", totalPriceText.getText().contains("27.00"));
+        assertTrue("Wrong Price", totalPriceText.getText().contains("$54.00"));
     }
-
-    @FindBy(id = "color_15")
-    private WebElement greenButton;
-
-    public void clickGreenButton() {
-        greenButton.click();
-    }
-
-    public void assertGreenButton(String green) {
-        assertTrue(greenButton.getText().contains(green));
-    }
-
-    @FindBy(id = "color_11")
-    private WebElement blackButton;
-
-    public void clickBlackButton() {
-        blackButton.click();
-    }
-
-    public void assertBlackButton(String black) {
-        assertTrue(blackButton.getText().contains(black));
-    }
-
 
     @FindBy(css = "#cart_title")
     private WebElement shoppingCartTitle;

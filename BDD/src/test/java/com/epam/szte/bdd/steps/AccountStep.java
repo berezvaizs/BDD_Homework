@@ -14,7 +14,7 @@ import com.epam.szte.bdd.pages.AccountPage;
  */
 public class AccountStep {
 	
-    private AccountPage accountPage = new AccountPage(Hooks.driver);
+    private final AccountPage accountPage = new AccountPage(Hooks.driver);
 
     @Then("^The account title should be (.+)$")
     public void the_account_title_should_be(String accountTitle) {

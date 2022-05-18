@@ -8,7 +8,7 @@ import com.epam.szte.bdd.utils.PageObject;
 
 public class HomepagePage extends PageObject {
 
-	private WebDriver driver;
+	private final WebDriver driver;
 	
 	public HomepagePage(WebDriver driver) {
 		super(driver);
